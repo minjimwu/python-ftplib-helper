@@ -3,7 +3,7 @@ import os
 import argparse
 import urlparse
 
-class ftplib_client():
+class ftp_client():
     def __init__(self, server, account, pwd):
         self.ftp = FTP(server)        
         self.ftp.set_pasv(True)        
