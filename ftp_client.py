@@ -43,6 +43,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print args
 
-    f = ftplib_client(server = args.server, account = args.account, pwd = args.pwd)
+    f = ftp_client(server = args.server, account = args.account, pwd = args.pwd)
     f.upload_file(remote_folder = args.remotedir, local_fpath = args.localfile)
         
