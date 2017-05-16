@@ -29,7 +29,7 @@ class ftp_client():
         self.chdir(remote_folder)
         fname = os.path.basename(local_fpath)
         print 'upload...'
-        self.ftp.storlines("STOR " + fname, open(local_fpath, 'r'))
+        self.ftp.storbinary("STOR " + fname, open(local_fpath, 'rb'))
 
 if __name__ == "__main__":
 
